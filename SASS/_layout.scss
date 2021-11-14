@@ -1,0 +1,23 @@
+.container{
+    padding: 5rem;
+
+    section:not(:last-child){
+        margin-bottom: 7rem;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1247px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1247px;
+    margin: 0 auto;
+}
