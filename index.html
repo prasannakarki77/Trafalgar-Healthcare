@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="SASS/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <section class="header">
+      <header class="header">
         <div class="logo">
           <div class="logo__icon">T</div>
           <span class="logo__text"> Trafalgar </span>
         </div>
         <div class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#"> Home</a></li>
-            <li class="nav__item"><a href="#"> Find a doctor</a></li>
-            <li class="nav__item"><a href="#"> Apps</a></li>
-            <li class="nav__item"><a href="#"> Testmonials</a></li>
-            <li class="nav__item"><a href="#"> About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link"> Home</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Find a doctor</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link"> Apps</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Testmonials</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link"> About</a></li>
           </ul>
         </div>
-    </section>
+      </header>
       <section class="hero">
         <div class="hero__desc">
           <h1 class="hero__heading">Virtual healthcare for you</h1>
@@ -34,9 +44,206 @@
           <button class="btn btn-blue">Consult today</button>
         </div>
         <div class="hero__pic">
-            <img src="images/image1.png" alt="" class="hero__img">
+          <img src="images/image1.png" alt="" class="hero__img" />
         </div>
       </section>
+      <section class="services">
+        <div class="services__desc">
+          <h2 class="text-primary">Our services</h2>
+          <div class="line services__line"></div>
+          <div class="text-tertiary">
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </div>
+        </div>
+        <div class="services__showcase">
+          <div class="services__box">
+            <img src="images/search.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Search doctor</h3>
+            <p class="text-default">
+              Choose your doctor from thousands of specialist, general, and
+              trusted hospitals
+            </p>
+          </div>
+          <div class="services__box">
+            <img src="images/pharmacy.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Online pharmacy</h3>
+            <p class="text-default">
+              Buy your medicines with our mobile application with a simple
+              delivery system
+            </p>
+          </div>
+          <div class="services__box">
+            <img src="images/consultation.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Consultation</h3>
+            <p class="text-default">
+              Free consultation with our trusted doctors and get the best
+              recomendations
+            </p>
+          </div>
+          <div class="services__box">
+            <img src="images/details.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Details info</h3>
+            <p class="text-default">
+              Free consultation with our trusted doctors and get the best
+              recomendations
+            </p>
+          </div>
+          <div class="services__box">
+            <img src="images/emergency care.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Emergency care</h3>
+            <p class="text-default">
+              You can get 24/7 urgent care for yourself or your children and
+              your lovely family
+            </p>
+          </div>
+          <div class="services__box">
+            <img src="images/tracking.png" alt="" class="services__img" />
+            <h3 class="text-secondary">Tracking</h3>
+            <p class="text-default">
+              Track and save your medical history and health data
+            </p>
+          </div>
+        </div>
+        <div class="center-btn">
+          <button class="learn-more-btn btn white-btn">Learn more</button>
+        </div>
+      </section>
+      <section class="about-apps">
+        <div class="about">
+          <div class="about-apps__pic">
+            <img
+              src="images/image2.png"
+              alt=""
+              class="about-apps__img about__img"
+            />
+          </div>
+          <div class="about__desc about-apps__desc">
+            <h2 class="text-primary">Leading healthcare providers</h2>
+            <div class="line"></div>
+            <p class="text-tertiary">
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone. To us, it’s not just
+              work. We take pride in the solutions we deliver
+            </p>
+            <button class="btn white-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="apps">
+          <div class="about-apps__pic apps__pic">
+            <img src="images/image3.png" alt="" class="about-apps__img" />
+          </div>
+          <div class="apps__desc about-apps__desc">
+            <h2 class="text-primary">Download our mobile apps</h2>
+            <div class="line"></div>
+            <p class="text-tertiary">
+              Our dedicated patient engagement app and web portal allow you to
+              access information instantaneously (no tedeous form, long calls,
+              or administrative hassle) and securely
+            </p>
+            <button class="learn-more-btn btn white-btn">
+              Download <i class="icon icon-download fas fa-arrow-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="article">
+        <div class="article__head-part">
+          <h2 class="text-primary">Check out our latest article</h2>
+          <div class="article__head-part--line line"></div>
+        </div>
+
+        <div class="article__showcase">
+          <div class="article__box">
+            <img src="images/article1.png" alt="" class="article__img" />
+            <div class="article__desc">
+              <h2 class="article__desc--heading">
+                Disease detection, check up in the laboratory
+              </h2>
+              <p class="text-default">
+                In this case, the role of the health laboratory is very
+                important to do a disease detection...
+              </p>
+              <button class="read-more-btn">Read more &rarr;</button>
+            </div>
+          </div>
+          <div class="article__box">
+            <img src="images/article2.png" alt="" class="article__img" />
+            <div class="article__desc">
+              <h2 class="article__desc--heading">
+                Herbal medicines that are safe for consumption
+              </h2>
+              <p class="text-default">
+                Herbal medicine is very widely used at this time because of its
+                very good for your health...
+              </p>
+              <button class="read-more-btn">Read more &rarr;</button>
+            </div>
+          </div>
+          <div class="article__box">
+            <img src="images/article3.png" alt="" class="article__img" />
+            <div class="article__desc">
+              <h2 class="article__desc--heading">
+                Natural care for healthy facial skin
+              </h2>
+              <p class="text-default">
+                A healthy lifestyle should start from now and also for your skin
+                health. There are some...
+              </p>
+              <button class="read-more-btn">Read more &rarr;</button>
+            </div>
+          </div>
+        </div>
+        <div class="center-btn">
+          <button class="view-all-btn btn white-btn">View all</button>
+        </div>
+      </section>
+      <footer class="footer-container">
+        <section class="footer">
+          <div class="footer__about">
+            <div class="footer__about--title">
+              <h4><span class="footer__about--logo">T</span> Trafalgar</h4>
+            </div>
+            <div class="footer__about--desc">
+              Trafalgar provides progressive, and affordable healthcare,
+              accessible on mobile and online for everyone
+              <p class="footer__about--copyright-text">
+                ©Trafalgar PTY LTD 2020. All rights reserved
+              </p>
+            </div>
+          </div>
+          <div class="footer__company">
+            <ul class="footer__list">
+              <h4 class="footer__list--heading">Company</h4>
+              <li class="footer__list-item">About</li>
+              <li class="footer__list-item">Testmonials</li>
+              <li class="footer__list-item">Find a doctor</li>
+              <li class="footer__list-item">Apps</li>
+            </ul>
+          </div>
+          <div class="footer__region">        
+            <ul class="footer__list">
+              <h4 class="footer__list--heading">Region</h4>
+              <li class="footer__list-item">Indonesia</li>
+              <li class="footer__list-item">Singapore</li>
+              <li class="footer__list-item">Hongkong</li>
+              <li class="footer__list-item">Canada</li>
+            </ul>
+          </div>
+          <div class="footer__help">
+            <ul class="footer__list">
+              <h4 class="footer__list--heading">Help</h4>
+              <li class="footer__list-item">Help section</li>
+              <li class="footer__list-item">Contact support</li>
+              <li class="footer__list-item">Instructions</li>
+              <li class="footer__list-item">How it works</li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+     
     </div>
   </body>
 </html>

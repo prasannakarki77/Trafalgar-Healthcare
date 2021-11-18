@@ -32,14 +32,19 @@
 
   &__item {
     display: inline-block;
-    transition: all 0.2s;
-
     &:not(:last-child) {
       margin-right: 3rem;
     }
+  }
 
-    &:hover {
+  &__link {
+    transition: all 0.2s;
+    color: #1f1534;
+    &:hover,
+    &:active,
+    &:focus {
       text-shadow: 1px 0 0 #1f1534;
+      color: currentColor;
     }
   }
 }
@@ -62,12 +67,12 @@
   }
 
   &__pic {
-      width: 50%;
+    width: 50%;
   }
 
   &__img {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -89,4 +94,255 @@
 .btn-blue {
   background-color: var(--color-primary);
   color: #fff;
+  border: 2px solid var(--color-primary);
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+}
+
+//////////////////////////////////////  SERVICES  //////////////////////////////////////////////////
+
+.services {
+  &__desc {
+    text-align: center;
+    margin-bottom: 8rem;
+    & > * {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__line {
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  &__showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 3.4rem;
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+
+  &__box {
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    padding: 4.6rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.text-secondary {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.text-default {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+//////////////////////////////////////  ABOUT - APPS  //////////////////////////////////////////////
+
+.about-apps {
+  &__pic {
+    width: 50%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__desc {
+    max-width: 40%;
+  }
+
+  &__desc > *:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.white-btn {
+  background-color: white;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary);
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
+
+// ABOUT
+
+.text-primary {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.line {
+  width: 5.6rem;
+  height: 2px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+.icon-download {
+  margin-left: 1rem;
+}
+
+// APPS
+
+.apps {
+  position: relative;
+
+  &__pic {
+    position: absolute;
+    right: 0px;
+  }
+
+  &__desc {
+    position: relative;
+  }
+}
+
+//////////////////////////////////////  ARTICLES  //////////////////////////////////////////////
+
+.article {
+  & > * {
+    margin-bottom: 8rem;
+  }
+
+  &__head-part {
+    text-align: center;
+
+    &--line {
+      margin: 0 auto;
+      margin-top: 2.6rem;
+    }
+  }
+
+  &__showcase {
+    max-width: 1120px;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    overflow: hidden;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__desc {
+    padding: 3rem;
+
+    &>*:not(:last-child){
+      margin-bottom: 1.2rem;
+    }
+    &--heading{
+      font-size: 2.1rem;
+      font-weight: 700;
+    }
+  }
+  
+}
+.read-more-btn{
+    font-size: 1.7rem;
+    color: var(--color-primary);
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover{
+      text-shadow: 2px -1px 9px rgba(190,212,246,0.72);
+      transform: scale(1.04);
+    }
+
+}
+
+
+
+//////////////////////////////////////  FOOTER  //////////////////////////////////////////////
+
+.footer{
+  color: #fff;
+  &__about{
+    max-width: 39rem;
+    &--title{
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+     
+    }
+    &--logo{
+      display: inline-block;
+      color: var(--color-primary);
+      background-color: #fff;
+      border-radius: 50%;
+      padding: .4rem 1rem;
+    }
+
+    &--desc{
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+
+  }
+  &__list{
+    list-style: none;
+
+   
+    &--heading{
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 3.5rem;
+    
+    }
+    &-item{
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      transition: all .2s;
+
+      &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      
+    }
+
+  }
+
 }

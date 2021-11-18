@@ -1,23 +1,63 @@
 .container{
+    position: relative;
     padding: 5rem;
+   
+}
+section{
+    max-width: 1247px;
+    margin: 0 auto;
+}
 
-    section:not(:last-child){
-        margin-bottom: 7rem;
-    }
+section:not(:last-child ){
+    margin-bottom: 19rem;
+    
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     max-width: 1247px;
     margin: 0 auto;
+    margin-bottom: 7rem;
+   
 }
 
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1247px;
     margin: 0 auto;
+}
+
+
+
+.about-apps {
+    & > * {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9rem;
+    }
+
+    &>*:not(:last-child){
+        margin-bottom: 25rem;
+    }
+}
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5rem;
+   
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+   justify-items: center;
 }
