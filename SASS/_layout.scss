@@ -46,6 +46,16 @@ section:not(:last-child ){
     }
 }
 
+
+.testimonial{
+    max-width:1000px ;
+    margin: 0 auto;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    color: white;
+  }
+
+
 .footer-container{
     position: absolute;
     bottom: 0;
